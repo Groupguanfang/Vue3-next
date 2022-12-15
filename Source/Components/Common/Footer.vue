@@ -18,19 +18,18 @@ const theme = useThemeVars()
     id="footer"
     justify="space-around"
     :style="{
-      borderTop: '1px solid ' + theme.borderColor,
       background: theme.bodyColor,
     }"
   >
-    <n-icon :size="30">
+    <n-icon :size="30" @click="$router.push('/')">
       <Home20Filled v-if="route.path === '/'" />
       <Home20Regular v-else />
     </n-icon>
-    <n-icon :size="30">
+    <n-icon :size="30" @click="$router.push('/discover')">
       <Iot20Filled v-if="route.path === '/discover'" />
       <Iot20Regular v-else />
     </n-icon>
-    <n-icon :size="30">
+    <n-icon :size="30" @click="$router.push('/user')">
       <PersonCircle20Filled v-if="route.path === '/user'" />
       <PersonCircle20Regular v-else />
     </n-icon>
@@ -42,7 +41,8 @@ const theme = useThemeVars()
   position: fixed;
   bottom: 0;
   width: 100%;
-  padding-top: 10px;
+  padding-top: 16px;
+  padding-bottom: 10px;
   left: 0;
 }
 @media (prefers-color-scheme: dark) {

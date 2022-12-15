@@ -73,8 +73,11 @@ import Footer from "@/Components/Common/Footer.vue"
 .ppt {
   border-radius: 18px;
 }
-.App img {
-  border-radius: 18px;
-  width: 100%;
+.App {
+  margin-top: 10px;
+  img {
+    border-radius: 18px;
+    width: 100%;
+  }
 }
 </style>
