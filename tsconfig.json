@@ -1,13 +1,19 @@
 {
   "extends": "@vue/tsconfig/tsconfig.web.json",
-  "include": ["env.d.ts", "Source/**/*", "src/**/*.vue"],
+  "include": ["env.d.ts", "Source/**/*", "src/**/*.vue", "Api"],
   "compilerOptions": {
     "baseUrl": ".",
+    "lib": ["es2015"],
+    "module": "ESNext",
+    "charset": "utf8",
+    "target": "ES2018",
+    "outDir": "Dist",
+    "moduleResolution": "NodeNext",
     "paths": {
-      "@/*": ["./Source/*"]
+      "@/*": ["./Source/*"],
+      "~/*": ["./*"]
     }
   },
-
   "references": [
     {
       "path": "./tsconfig.config.json"

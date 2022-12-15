@@ -10,7 +10,8 @@ export default defineConfig({
   plugins: [vue(), VitePWA(), vueJsx()],
   resolve: {
     alias: {
-      '@': fileURLToPath(new URL('./Source', import.meta.url))
+      '@': fileURLToPath(new URL('./Source', import.meta.url)),
+      '~': fileURLToPath(new URL('./', import.meta.url))
     }
   },
   server: {
