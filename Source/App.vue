@@ -4,7 +4,7 @@ import { NConfigProvider, useOsTheme, darkTheme } from "naive-ui"
 import ThemeConfig from "../Config/ThemeConfig"
 
 const osThemeRef = useOsTheme()
-const theme = computed(() => (osThemeRef.value === 'dark' ? darkTheme : null))
+const theme = computed(() => (osThemeRef.value === "dark" ? darkTheme : null))
 </script>
 
 <template>
@@ -12,5 +12,3 @@ const theme = computed(() => (osThemeRef.value === 'dark' ? darkTheme : null))
     <router-view />
   </n-config-provider>
 </template>
-
-

@@ -1,6 +1,5 @@
 <script setup lang="ts">
-import { onMounted, ref, computed, watchEffect } from "vue"
-import { useOsTheme, useThemeVars, NElement, NSpace, NIcon } from "naive-ui"
+import { useThemeVars, NSpace, NIcon } from "naive-ui"
 import { useRoute } from "vue-router"
 import {
   Home20Filled,
@@ -8,14 +7,21 @@ import {
   Iot20Filled,
   Iot20Regular,
   PersonCircle20Filled,
-  PersonCircle20Regular
+  PersonCircle20Regular,
 } from "@vicons/fluent"
 const route = useRoute()
 const theme = useThemeVars()
 </script>
 
 <template>
-  <n-space id="footer" justify="space-around" :style="{ borderTop: '1px solid ' + theme.borderColor, background: theme.bodyColor }">
+  <n-space
+    id="footer"
+    justify="space-around"
+    :style="{
+      borderTop: '1px solid ' + theme.borderColor,
+      background: theme.bodyColor,
+    }"
+  >
     <n-icon :size="30">
       <Home20Filled v-if="route.path === '/'" />
       <Home20Regular v-else />
@@ -45,6 +51,3 @@ const theme = useThemeVars()
   }
 }
 </style>
-
-
-

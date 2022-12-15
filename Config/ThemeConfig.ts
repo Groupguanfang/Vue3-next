@@ -1,4 +1,3 @@
-const ThemeConfig = [
-]
+const ThemeConfig = []
 
 export default ThemeConfig
