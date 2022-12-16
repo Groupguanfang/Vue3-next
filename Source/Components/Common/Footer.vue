@@ -42,7 +42,7 @@ const theme = useThemeVars()
   bottom: 0;
   width: 100%;
   padding-top: 16px;
-  padding-bottom: 10px;
+  padding-bottom: 8px;
   left: 0;
 }
 @media (prefers-color-scheme: dark) {
@@ -51,3 +51,7 @@ const theme = useThemeVars()
   }
 }
 </style>
+
+
+
+
