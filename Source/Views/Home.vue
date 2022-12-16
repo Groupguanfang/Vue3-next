@@ -71,12 +71,12 @@ import Footer from "@/Components/Common/Footer.vue"
   object-fit: cover;
 }
 .ppt {
-  border-radius: 18px;
+  border-radius: 9px;
 }
 .App {
   margin-top: 10px;
   img {
-    border-radius: 18px;
+    border-radius: 9px;
     width: 100%;
   }
 }
