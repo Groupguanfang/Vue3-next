@@ -6,4 +6,13 @@ export const useCommon = defineStore("common", {
       counter: false,
     }
   },
+  persist: {
+    enabled: true,
+    strategies: [
+      {
+        key: 'LightingCommon',
+        storage: localStorage,
+      }
+    ],
+  }
 })

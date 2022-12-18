@@ -23,7 +23,16 @@ const router = createRouter({
       name: "discover",
       component: () => import("./Views/Discover/Discover.vue"),
     },
+    {
+      path: "/apps/:e",
+      name: "bilibili",
+      component: () => import('./Views/Apps/Bilibili.vue')
+    },
   ],
+})
+
+router.beforeEach(() => {
+    
 })
 
 export default router

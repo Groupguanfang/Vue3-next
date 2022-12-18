@@ -12,7 +12,7 @@ import Footer from "@/Components/Common/Footer.vue"
 </script>
 
 <template>
-  <n-space class="margin container">
+  <n-space class="margin">
     <n-space vertical :size="0">
       <Footer />
       <n-text depth="3">
@@ -36,7 +36,7 @@ import Footer from "@/Components/Common/Footer.vue"
     </n-carousel>
 
     <n-grid :x-gap="35" class="App" :cols="4">
-      <n-gi>
+      <n-gi @click="$router.push('/apps/bilibili')">
         <n-space :size="0" justify="center">
           <img src="//static.light.xhhzs.cn/public/bili.png" />
           <n-text>腕上B站</n-text>
