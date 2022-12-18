@@ -1,5 +1,5 @@
 <template>
-  <div class="container padding bilibili" v-if="type === 'bilibili'">
+  <div class="bilibili padding" v-if="type === 'bilibili'">
     <div class="logo-container">
       <img class="logo" src="//static.light.xhhzs.cn/public/bili.png" />
     </div>
@@ -124,7 +124,20 @@
 </template>
 
 <script setup lang="ts">
-import { NModal, NSpin, NButton, NText, NSpace, NH1, NCard, NIcon, NCollapse, NCollapseItem, NSteps, NStep } from "naive-ui"
+import {
+  NModal,
+  NSpin,
+  NButton,
+  NText,
+  NSpace,
+  NH1,
+  NCard,
+  NIcon,
+  NCollapse,
+  NCollapseItem,
+  NSteps,
+  NStep,
+} from "naive-ui"
 import PlayCircle20Filled from "@vicons/fluent/PlayCircle20Filled"
 import CloudDownload from "@vicons/fluent/CloudArrowDown16Regular"
 import Video20Regular from "@vicons/fluent/Video20Regular"
